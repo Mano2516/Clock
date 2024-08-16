@@ -18,7 +18,7 @@ let update = () => {
     let date = new Date();
     let sec = (date.getSeconds() /60)*360,
     min = (date.getMinutes() /60)*360,
-    hou = (date.getHours()/ 12) *360;
+    hou =( (date.getHours()/ 12) *360 )+(date.getMinutes()/60)*30;
     hour.style.transform = `rotate(${hou}deg)`;
     minute.style.transform = `rotate(${min}deg)`;
     second.style.transform= `rotate(${sec}deg)`;

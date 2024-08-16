@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .clock{
         height: 87.5px;
         width: 350px;
