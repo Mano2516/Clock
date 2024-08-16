@@ -18,13 +18,26 @@
         let hou = date.getHours();
         if(hou===0) {
             hours.textContent= `00`;
+        }
+        else if (hou < 10 && hou !== "0"){
+            hours.textContent=`0${hou}`
         } else {
             hours.textContent=hou;
         }
         let min = date.getMinutes();
-        minutes.textContent=min ;
+        if(min<10){
+            minutes.textContent=`0${min}`
+        }
+        else {
+            minutes.textContent=min ;
+        }
         let sec = date.getSeconds();
-        seconds.textContent=sec
+        if(sec<10){
+            seconds.textContent=`0${sec}`;
+        }
+        else {
+            seconds.textContent=sec
+        }
     }
     setInterval(update,1000);
     update()
