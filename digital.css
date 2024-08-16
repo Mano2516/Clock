@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --primary-color: #f6f7fb;
+    --white-color: #fff;
+    --black-color: #18191a;
+    --red-color: #e74c3c;
+}
+body.dark {
+    --primary-color: #242526;
+    --white-color: #18191a;
+    --black-color: #fff;
+    --red-color: #e74c3c;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.clock {
+    width: 400px;
+    height: 100px;
+    border-radius: 100px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 25px 45px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.clock span {
+    width: calc((75%)/3);
+    height: 90%;
+    z-index: 100;
+    border-radius: 30px;
+    background: var(--black-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 25px 45px rgba(0, 0, 0, 0.1);
+    color: var(--red-color);
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock p {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+.mode , .change{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--white-color);
+    background: var(--black-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
