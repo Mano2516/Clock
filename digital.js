@@ -18,6 +18,8 @@
         let hou = date.getHours();
         if(hou===0) {
             hours.textContent= `00`;
+        } else {
+            hours.textContent=hou;
         }
         let min = date.getMinutes();
         minutes.textContent=min ;
